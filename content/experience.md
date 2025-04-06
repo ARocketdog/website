@@ -22,10 +22,10 @@ sections:
     content:
       title: Skills & Hobbies
       username: admin
-  - block: resume-awards
-    content:
-      title: Awards
-      username: admin
+  #- block: resume-awards
+  #  content:
+  #    title: Awards
+  #    username: admin
   - block: resume-languages
     content:
       title: Languages

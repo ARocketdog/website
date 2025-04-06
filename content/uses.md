@@ -10,12 +10,20 @@ Make sure to check out [uses.tech](https://uses.tech/) for a list of everyone's 
 
 I often get asked about what software or hardware I use, so this page will serve as a living document and a place to point curious readers to when I get asked.
 
-## Editor + Terminal
+## System 
 
-- [Visual Studio Code](https://code.visualstudio.com/) is my current editor
-- Chrome is my main browser
-- iTerm2 is my terminal
+- **Desktop**: Custom built
+- **Keyboard**: Keychron Q3 Max + Q0 Max
+- **Mouse**: Razer Deathadder Pro
+- **Laptop**: Asus Zenbook
+- **Microphone**: Shure SM7B
+- **Headphones**: DT770 Pro Headphones
 
-## Desktop Apps
 
-- Better Touch Tool for window management and custom keyboard shortcuts
+## Windows Environment
+
+- **OS**: Windows 10 Professional
+- **IDE**: VS Code
+- **Browser**: Chrome
+
+## Linux Environment
