@@ -2,9 +2,6 @@
 # Display name
 title: Brendan Chow
 
-# Name pronunciation (optional)
-#name_pronunciation: Chien Shiung Wu
-
 # Full name (for SEO)
 first_name: Brendan
 last_name: Chow
@@ -40,9 +37,11 @@ profiles:
   #  url: https://www.instagram.com/
 
 education:
+  - area: MTr Master of Transport
+    institution: University of Sydney
+    date_end: 2027-12-31
   - area: BSc/BAdvStudies Data Science and Economics
     institution: University of Sydney
-    #date_start: 2016-01-01
     date_end: 2025-12-31
     summary: |
       Courses included:
