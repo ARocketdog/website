@@ -2,6 +2,9 @@
 # Display name
 title: Brendan Chow
 
+# Name pronunciation (optional)
+#name_pronunciation: Chien Shiung Wu
+
 # Full name (for SEO)
 first_name: Brendan
 last_name: Chow
@@ -13,16 +16,13 @@ status:
 # Is this the primary user of the site?
 superuser: true
 
-# Short bio (displayed in user profile at end of posts)
-bio: I am currently a student at the University of Sydney
-
 # Role/position/tagline
 role: Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: University of Sydney
-    url: ""
+    url: https://www.sydney.edu.au/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -40,18 +40,10 @@ profiles:
   #  url: https://www.instagram.com/
 
 education:
-  - area: Master of Transport
-    institution: University of Sydney
-    year: 2027
-    #summary: |
-    #  Courses included:
-    #  - Statistics (STAT2011, STAT4021, STAT4022, STAT4023, STAT4024)
-    #  - Data Science (DATA1001, DATA1002, DATA2001, DATA2002)
-    #  - Economics (ECON1001, ECON1002, ECOS2001, ECOS2002, ECOS3002, ECOS3003, ECOS3005, ECOS3021, ECOS3018, ECOS3031)
-    #  - Computer Science (INFO1110, INFO1113, COMP2923)
   - area: BSc/BAdvStudies Data Science and Economics
     institution: University of Sydney
-    year: 2025
+    #date_start: 2016-01-01
+    date_end: 2025-12-31
     summary: |
       Courses included:
       - Statistics (STAT2011, STAT4021, STAT4022, STAT4023, STAT4024)
@@ -139,3 +131,4 @@ languages:
 #      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
+I am currently a student at the University of Sydney
