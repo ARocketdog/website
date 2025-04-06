@@ -54,7 +54,8 @@ locale:
 
 # Site features
 features:
-  math:
-    enable: false
+  highlight: true
+  highlight_languages: ["python"]
+  math: true
   privacy_pack:
     enable: false

@@ -5,11 +5,11 @@
 
 main:
   - name: Home
-    url: /
+    url: "#about"
     weight: 10
   - name: Blog
     url: blog/
     weight: 20
-  - name: Uses
-    url: uses/
-    weight: 30
+  - name: "Contact"
+    url: "#contact"
+    weight: 60
