@@ -7,6 +7,27 @@ title: Brendan Chow # Website name
 baseURL: 'https://xagill.com/' # Website URL
 
 ############################
+## PAGE OPTIONS
+############################
+
+cascade:
+  # Blog post options
+  - _target:
+      path: /post/**
+      kind: page
+    pager: true
+    editable: false
+    reading_time: true
+    commentable: true
+    show_related: true
+    share: true
+    show_breadcrumb: false
+  # Tag page options
+  - _target:
+      path: /tags/**
+    view: date-title-summary
+
+############################
 ## LANGUAGE
 ############################
 
@@ -23,8 +44,7 @@ build:
   writeStats: true
 enableGitInfo: false
 summaryLength: 30
-pagination:
-  pagerSize: 10
+paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -41,6 +61,8 @@ imaging:
   anchor: smart
 timeout: 600000
 taxonomies:
+  tag: tags
+  category: categories
   author: authors
 markup:
   _merge: deep
