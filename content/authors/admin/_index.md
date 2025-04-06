@@ -13,6 +13,9 @@ status:
 # Is this the primary user of the site?
 superuser: true
 
+# Short bio (displayed in user profile at end of posts)
+bio: I am currently a student at the University of Sydney
+
 # Role/position/tagline
 role: Student
 
@@ -136,4 +139,3 @@ languages:
 #      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-I am currently a student at the University of Sydney
