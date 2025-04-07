@@ -70,15 +70,15 @@ skills:
       - name: Python
         description: ''
         percent: 80
-        icon: code-bracket
-      - name: Data Science
+        icon: devicon/python
+      - name: R
         description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
+        percent: 60
+        icon: devicon/rstudio
+      - name: postgresSQL
         description: ''
-        percent: 40
-        icon: circle-stack
+        percent: 30
+        icon: devicon/postgresql
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -86,11 +86,11 @@ skills:
       - name: Gaming
         description: ''
         percent: 60
-        icon: video-game
+        icon: custom/gamepad
       - name: Gym
         description: ''
         percent: 100
-        icon: muscle
+        icon: custom/dumbbell
       - name: Piano
         description: ''
         percent: 80
