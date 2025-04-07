@@ -45,7 +45,7 @@ education:
     date_end: 2025-12-31
     summary: |
       Courses included:
-      - Statistics (STAT2011, STAT4021, STAT4022, STAT4023, STAT4024)
+      - Statistics (STAT2011, STAT4021, STAT4022, STAT4023, STAT4025)
       - Data Science (DATA1001, DATA1002, DATA2001, DATA2002)
       - Economics (ECON1001, ECON1002, ECOS2001, ECOS2002, ECOS3002, ECOS3003, ECOS3005, ECOS3021, ECOS3018, ECOS3031)
       - Computer Science (INFO1110, INFO1113, COMP2923)
@@ -86,7 +86,7 @@ skills:
       - name: Gaming
         description: ''
         percent: 60
-        icon: custom/gamepad
+        icon: custom/computer
       - name: Gym
         description: ''
         percent: 100
