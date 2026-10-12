@@ -11,7 +11,6 @@ role: Student
 links:
   - icon: at-symbol
     url: 'mailto:brendanchow@arocketdog.au'
-    url: mailto:your-email@example.com
     label: E-mail Me
   - icon: brands/x
     url: https://x.com/A_Rocketdog
