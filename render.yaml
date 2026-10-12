@@ -5,5 +5,3 @@ services:
     buildCommand: ""
     staticPublishPath: .
     autoDeploy: true
-    domains:
-      - arocketdog.au
