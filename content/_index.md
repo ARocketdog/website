@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download Résumé
-        url: uploads/resume.pdf
+        url: uploads/Brendan_Chow_CV_Jul_26.pdf
     design:
       banner:
         # Upload your cover image to the `assets/media/` folder and reference it here
@@ -37,10 +37,10 @@ sections:
     content:
       title: Skills & Hobbies
       username: admin
-  - block: awards
-    content:
-      title: Awards
-      username: admin
+  #- block: awards
+  #  content:
+  #    title: Awards
+  #    username: admin
   - block: languages
     content:
       title: Languages

@@ -25,7 +25,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:brendanchow@xagill.com'
+    url: 'mailto:brendanchow@arocketdog.au'
     label: E-mail Me
   - icon: brands/x
     url: https://x.com/A_Rocketdog
@@ -39,7 +39,7 @@ profiles:
 education:
   - area: Master of Transport
     institution: University of Sydney
-    date_end: 2027-12-31
+    date_end: 2027-06-31
   - area: BSc (Data Science and Economics)
     institution: University of Sydney
     date_end: 2025-12-31
@@ -100,7 +100,7 @@ languages:
   - name: English
     percent: 100
   - name: Cantonese
-    percent: 30
+    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
