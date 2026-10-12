@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: website
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    autoDeploy: true
+    domains:
+      - arocketdog.au
