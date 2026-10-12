@@ -5,6 +5,7 @@
   --border: #e3e5e8;
   --accent: #2f6fde;
   --card: #ffffff;
+  --sidebar: 240px;
 }
 
 /* Set by theme.js from the saved choice or the OS preference */
@@ -25,7 +26,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Push the footer to the bottom of the window on short pages */
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background: var(--bg);
   color: var(--fg);
@@ -39,10 +44,11 @@ a {
 .site-header,
 main,
 footer {
-  max-width: 720px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 1.25rem;
 }
+
+main { flex: 1; }
 
 .site-header {
   display: flex;
@@ -103,14 +109,25 @@ nav a[aria-current="page"] {
   display: block;
 }
 
-/* Wide screens: fixed sidebar nav on the left */
-@media (min-width: 900px) {
+/* Wide screens: fixed sidebar nav on the left, matching empty panel on the right */
+@media (min-width: 1100px) {
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: var(--sidebar);
+    background: var(--bg);
+    border-left: 1px solid var(--border);
+  }
+
   .site-header {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 200px;
+    width: var(--sidebar);
     max-width: none;
     margin: 0;
     padding: 2.5rem 1.5rem;
@@ -119,6 +136,7 @@ nav a[aria-current="page"] {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
+    background: var(--bg);
     border-right: 1px solid var(--border);
   }
 
@@ -127,11 +145,9 @@ nav a[aria-current="page"] {
     gap: 0.75rem;
   }
 
-  main,
-  footer {
-    padding-left: calc(200px + 2.5rem);
-    max-width: calc(720px + 200px + 2.5rem);
-    margin: 0;
+  main {
+    padding-left: calc(var(--sidebar) + 2.5rem);
+    padding-right: calc(var(--sidebar) + 2.5rem);
   }
 }
 
@@ -302,7 +318,12 @@ details ul {
   color: var(--muted);
 }
 
+/* Full width and drawn above the fixed sidebars */
 footer {
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
+  text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: var(--muted);
