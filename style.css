@@ -6,6 +6,7 @@
   --accent: #2f6fde;
   --card: #ffffff;
   --sidebar: 240px;
+  color-scheme: light;
 }
 
 /* Set by theme.js from the saved choice or the OS preference */
@@ -16,6 +17,7 @@
   --border: #2a3038;
   --accent: #6ea0ff;
   --card: #181c22;
+  color-scheme: dark;
 }
 
 * {
@@ -48,7 +50,9 @@ footer {
   padding: 0 1.25rem;
 }
 
-main { flex: 1; }
+main {
+  flex: 1;
+}
 
 .site-header {
   display: flex;
@@ -100,12 +104,14 @@ nav a[aria-current="page"] {
   height: 1.1rem;
 }
 
-.icon-sun,
-[data-theme="dark"] .icon-moon {
+/* Show the icon for the current mode, set by theme.js */
+.theme-toggle svg {
   display: none;
 }
 
-[data-theme="dark"] .icon-sun {
+[data-theme-mode="system"] .icon-system,
+[data-theme-mode="light"] .icon-sun,
+[data-theme-mode="dark"] .icon-moon {
   display: block;
 }
 
@@ -151,8 +157,9 @@ nav a[aria-current="page"] {
   }
 }
 
+/* Same space above and below every divider */
 section {
-  padding: 2.5rem 0;
+  padding: 2rem 0;
   border-top: 1px solid var(--border);
   scroll-margin-top: 1rem;
 }
@@ -163,8 +170,8 @@ section:first-child {
 
 h1 {
   margin: 0;
-  font-size: 2rem;
-  line-height: 1.2;
+  font-size: 2.25rem;
+  line-height: 1.25;
 }
 
 h2 {
@@ -187,6 +194,10 @@ h3 {
   align-items: center;
 }
 
+.bio p:first-child {
+  margin-top: 0;
+}
+
 .avatar {
   width: 160px;
   height: 180px;
@@ -202,7 +213,15 @@ h3 {
 }
 
 .role {
-  margin: 0.25rem 0 1rem;
+  margin: 0.25rem 0 0;
+}
+
+.email {
+  margin: 0;
+}
+
+.email a {
+  margin-left: 1.5rem;
 }
 
 .button {
@@ -221,6 +240,10 @@ h3 {
 
 .entry {
   margin-bottom: 1.5rem;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
 }
 
 .entry-head {
@@ -243,7 +266,12 @@ summary {
 }
 
 details ul {
+  margin: 0.5rem 0 0;
   padding-left: 1.25rem;
+}
+
+details li + li {
+  margin-top: 0.25rem;
 }
 
 .tags,
@@ -342,7 +370,7 @@ footer {
     height: 128px;
   }
 
-  .links {
-    justify-content: center;
+  .email a {
+    margin-left: 0;
   }
 }
